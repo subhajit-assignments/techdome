@@ -1,0 +1,21 @@
+{
+  "name": "assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.1.1",
+    "eslint": "^10.7.0",
+    "prettier": "^3.9.5"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "faker": "^6.6.6"
+  }
+}
