@@ -1,0 +1,291 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: e2e\mobile.spec.js >> Responsive Design Tests >> mobile 375px layout keeps navigation and main content visible on the homepage
+- Location: tests\e2e\mobile.spec.js:4:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Tearing down "context" exceeded the test timeout of 30000ms.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - banner [ref=e6]:
+    - link "Company logo small Company logo large" [ref=e7] [cursor=pointer]:
+      - /url: /
+      - generic [ref=e8]:
+        - img "Company logo small" [ref=e9]
+        - img "Company logo large" [ref=e10]
+    - navigation [ref=e11]:
+      - img "Menu" [ref=e12] [cursor=pointer]
+  - main [ref=e13]:
+    - main [ref=e14]:
+      - generic [ref=e15]: Your browser does not support the video tag.
+      - generic [ref=e17]:
+        - generic [ref=e19]:
+          - heading "Trusted Partner in Digital Excellence" [level=1] [ref=e20]
+          - paragraph [ref=e21]: At Techdome, we handle tech support and IT solutions, so you can focus on what matters the most.
+          - link "Meet the Minds" [ref=e23] [cursor=pointer]:
+            - /url: /about-us/#leaders
+            - button "Meet the Minds" [ref=e24]:
+              - generic [ref=e25]: Meet the Minds
+        - img "Center Media" [ref=e28]
+        - generic [ref=e30] [cursor=pointer]:
+          - heading "News & Events" [level=2] [ref=e31]
+          - link "Event Highlights Explore insights and updates from our recent events." [ref=e32]:
+            - /url: events/CNCF-events/
+            - generic [ref=e33]:
+              - heading "Event Highlights" [level=3] [ref=e34]
+              - paragraph [ref=e35]: Explore insights and updates from our recent events.
+              - img [ref=e37]
+              - separator [ref=e40]
+          - link "Top Moments Review key takeaways and memorable moments at techdome." [ref=e41]:
+            - /url: /life-at-techdome
+            - generic [ref=e42]:
+              - heading "Top Moments" [level=3] [ref=e43]
+              - paragraph [ref=e44]: Review key takeaways and memorable moments at techdome.
+              - img [ref=e46]
+              - separator [ref=e49]
+    - generic [ref=e52]:
+      - img "Building Better IT Solution Illustration" [ref=e54]
+      - generic [ref=e56]:
+        - heading "Building Your Better IT Solution" [level=1] [ref=e57]
+        - paragraph [ref=e58]: Our IT solutions are designed to scale with your business, adapting to growth and changes while fostering long-term success. We ensure that as your business evolves, our technology evolves with it.
+        - generic [ref=e59]:
+          - paragraph [ref=e61]: Diversified Services with Comprehensive Approach
+          - paragraph [ref=e63]: Industry Mastery with Proven Solutions
+        - generic [ref=e65]:
+          - generic [ref=e67]:
+            - generic [ref=e68]: 100%
+            - paragraph [ref=e69]: Focus on People and Partnership
+          - generic [ref=e71]:
+            - generic [ref=e72]: 50+
+            - paragraph [ref=e73]: "Scalable Solutions: Growth-Oriented IT"
+        - link "Expand Your Knowledge" [ref=e75] [cursor=pointer]:
+          - /url: contact-us
+          - button "Expand Your Knowledge" [ref=e76]:
+            - generic [ref=e77]: Expand Your Knowledge
+    - main [ref=e79]:
+      - heading "Communal Strategies" [level=1] [ref=e80]
+      - generic [ref=e81]:
+        - img "Guidance" [ref=e83]
+        - generic [ref=e84]:
+          - generic [ref=e85]:
+            - heading "Visionary Alignment" [level=2] [ref=e86]
+            - paragraph [ref=e88]: We align our strategies with your long-term goals, ensuring every step we take together drives toward your ultimate vision.
+          - generic [ref=e89]:
+            - button "Guidance" [ref=e90] [cursor=pointer]
+            - button "Fusion" [ref=e91] [cursor=pointer]
+            - button "Unity" [ref=e92] [cursor=pointer]
+            - button "Prosperity" [ref=e93] [cursor=pointer]
+            - button "Continuity" [ref=e94] [cursor=pointer]
+    - main [ref=e95]:
+      - generic [ref=e96]:
+        - generic [ref=e97]:
+          - heading "Our Key Expertise" [level=2] [ref=e98]
+          - heading "Glimpse of" [level=1] [ref=e100]
+        - generic [ref=e102]:
+          - article [ref=e104]:
+            - link "AI Services and Products Enhance operations with advanced AI solutions. img" [ref=e106] [cursor=pointer]:
+              - /url: /solution/AI-solutions/
+              - generic [ref=e107]:
+                - generic [ref=e109]: AI Services and Products
+                - generic [ref=e112]:
+                  - heading "Enhance operations with advanced AI solutions." [level=3] [ref=e113]
+                  - img "img"
+          - article [ref=e115]:
+            - link "Manufacturing Process Automation Optimize manufacturing processes with automation. img" [ref=e117] [cursor=pointer]:
+              - /url: /solution/ERP-solutions/
+              - generic [ref=e118]:
+                - generic [ref=e120]: Manufacturing Process Automation
+                - generic [ref=e123]:
+                  - heading "Optimize manufacturing processes with automation." [level=3] [ref=e124]
+                  - img "img"
+          - article [ref=e126]:
+            - link "Cloud Computing Integration Boost efficiency with cloud solutions img" [ref=e128] [cursor=pointer]:
+              - /url: /solution/cloud-computing-solutions/
+              - generic [ref=e129]:
+                - generic [ref=e131]: Cloud Computing Integration
+                - generic [ref=e134]:
+                  - heading "Boost efficiency with cloud solutions" [level=3] [ref=e135]
+                  - img "img"
+        - link "Explore More" [ref=e137] [cursor=pointer]:
+          - /url: /about-us
+          - button "Explore More" [ref=e138]:
+            - generic [ref=e139]: Explore More
+    - generic [ref=e141]:
+      - generic [ref=e142]:
+        - heading "Blogs & Articles" [level=2] [ref=e143]
+        - heading "Our Recent Blogs & Articles" [level=1] [ref=e145]
+      - generic [ref=e147]:
+        - link [ref=e149] [cursor=pointer]:
+          - /url: /blog-and-article/harnessing-tech-enhance-efficiency/
+          - article [ref=e150]:
+            - generic [ref=e151]:
+              - img "Featured blog post" [ref=e152]
+              - generic [ref=e153]: Blogs
+            - generic [ref=e154]: Rahul Joshi • Sep 3, 2024
+            - generic [ref=e155]:
+              - heading "Harnessing the Power of..." [level=2] [ref=e156]
+              - button [ref=e157]
+            - paragraph [ref=e158]: Exploring innovative tech solutions that streamline operations, reduce costs, and boost productivity across various industries.
+            - generic [ref=e159]:
+              - generic [ref=e160]: Automation
+              - generic [ref=e161]: Research
+              - generic [ref=e162]: Artificial Intelligence
+        - generic [ref=e164]:
+          - link [ref=e165] [cursor=pointer]:
+            - /url: /blog-and-article/security-privacy-web-3/
+            - article [ref=e166]:
+              - generic [ref=e167]:
+                - generic [ref=e168]:
+                  - img "Navigating the Security and Privacy Challenges of Web 3.0" [ref=e169]
+                  - generic [ref=e170]: Article
+                - generic [ref=e172]:
+                  - button [ref=e173]
+                  - generic [ref=e174]: Rahul Joshi • Sep 3, 2024
+                  - heading "Navigating the Security and Privacy Challenges of Web 3.0" [level=3] [ref=e175]
+                  - paragraph [ref=e176]: Explore the key security and privacy challenges in Web 3.0...
+                  - generic [ref=e177]:
+                    - generic [ref=e178]: Cyber Security
+                    - generic [ref=e179]: Web 3.0
+          - link [ref=e180] [cursor=pointer]:
+            - /url: /blog-and-article/decentralized-autonomous-organizations
+            - article [ref=e181]:
+              - generic [ref=e182]:
+                - generic [ref=e183]:
+                  - img "Decentralized Autonomous Organizations (DAOs)" [ref=e184]
+                  - generic [ref=e185]: Article
+                - generic [ref=e187]:
+                  - button [ref=e188]
+                  - generic [ref=e189]: Rahul Joshi • Sep 6, 2024
+                  - heading "Decentralized Autonomous Organizations (DAOs)" [level=3] [ref=e190]
+                  - paragraph [ref=e191]: Exploring how DAOs use blockchain to revolutionize governance with decentralized,...
+                  - generic [ref=e192]:
+                    - generic [ref=e193]: Blockchain
+                    - generic [ref=e194]: Crypto
+      - link "Read More" [ref=e196] [cursor=pointer]:
+        - /url: /blog-and-article
+        - button "Read More" [ref=e197]:
+          - generic [ref=e198]: Read More
+  - generic [ref=e199]:
+    - generic [ref=e201]:
+      - heading "GET UPDATES" [level=2] [ref=e204]
+      - generic [ref=e206]:
+        - generic [ref=e207]:
+          - img "MailIcon" [ref=e208]
+          - generic [ref=e209]: Enter your email
+          - textbox "Enter your email" [ref=e210]
+        - button "arrowRight" [ref=e211] [cursor=pointer]:
+          - img "arrowRight" [ref=e212]
+    - contentinfo [ref=e213]:
+      - generic [ref=e215]:
+        - generic [ref=e217]:
+          - img "Techdome logo" [ref=e219]
+          - generic [ref=e220]:
+            - paragraph [ref=e221]: Techdome is your trusted partner for end-to-end technology solutions. From planning and building to designing, developing, and launching, we offer comprehensive services to meet your unique needs.
+            - generic [ref=e223]:
+              - link "linkedin.com icon" [ref=e224] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/techdome-solutions/
+                - img "linkedin.com icon" [ref=e225]
+              - link "instagram.com icon" [ref=e226] [cursor=pointer]:
+                - /url: https://www.instagram.com/techdome.io/
+                - img "instagram.com icon" [ref=e227]
+              - link "youtube.com icon" [ref=e228] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UCDzAGKRHUlISf_jJPR7Cp1w
+                - img "youtube.com icon" [ref=e229]
+              - link "twitter.com icon" [ref=e230] [cursor=pointer]:
+                - /url: https://x.com/techdomesolves/
+                - img "twitter.com icon" [ref=e231]
+              - link "facebook.com icon" [ref=e232] [cursor=pointer]:
+                - /url: https://m.facebook.com/100090201126792/
+                - img "facebook.com icon" [ref=e233]
+        - generic [ref=e236]:
+          - navigation [ref=e238]:
+            - heading "Services" [level=3] [ref=e239]
+            - list [ref=e241]:
+              - listitem [ref=e242]:
+                - link "Artificial Intelligence" [ref=e243] [cursor=pointer]:
+                  - /url: /solution/AI-solutions/
+              - listitem [ref=e244]:
+                - link "Cloud Computing" [ref=e245] [cursor=pointer]:
+                  - /url: /solution/cloud-computing-solutions
+              - listitem [ref=e246]:
+                - link "Cybersecurity" [ref=e247] [cursor=pointer]:
+                  - /url: /solution/Cybersecurity-solutions
+              - listitem [ref=e248]:
+                - link "Data Analytics" [ref=e249] [cursor=pointer]:
+                  - /url: /solution/data-analytics-solutions/
+              - listitem [ref=e250]:
+                - link "Blockchain" [ref=e251] [cursor=pointer]:
+                  - /url: /solution/blockchain-solutions
+              - listitem [ref=e252]:
+                - link "Business Intelligence" [ref=e253] [cursor=pointer]:
+                  - /url: /solution/business-intelligence-solutions
+          - navigation [ref=e255]:
+            - heading "Industries" [level=3] [ref=e256]
+            - list [ref=e258]:
+              - listitem [ref=e259]:
+                - link "Healthcare" [ref=e260] [cursor=pointer]:
+                  - /url: /industries/health-industry
+              - listitem [ref=e261]:
+                - link "Finance" [ref=e262] [cursor=pointer]:
+                  - /url: /industries/finance-industry/
+              - listitem [ref=e263]:
+                - link "Education" [ref=e264] [cursor=pointer]:
+                  - /url: /industries/Edtech-industry/
+              - listitem [ref=e265]:
+                - link "Information Technology" [ref=e266] [cursor=pointer]:
+                  - /url: /industries/IT-industry/
+              - listitem [ref=e267]:
+                - link "e-commerce" [ref=e268] [cursor=pointer]:
+                  - /url: /industries/e-commerce-industry
+              - listitem [ref=e269]:
+                - link "Manufacturing" [ref=e270] [cursor=pointer]:
+                  - /url: /industries/manufacturing-industry/
+          - navigation [ref=e272]:
+            - heading "Company" [level=3] [ref=e273]
+            - list [ref=e275]:
+              - listitem [ref=e276]:
+                - link "Home" [ref=e277] [cursor=pointer]:
+                  - /url: /
+              - listitem [ref=e278]:
+                - link "About Us" [ref=e279] [cursor=pointer]:
+                  - /url: /about-us
+              - listitem [ref=e280]:
+                - link "Careers" [ref=e281] [cursor=pointer]:
+                  - /url: /careers
+              - listitem [ref=e282]:
+                - link "Life at Techdome" [ref=e283] [cursor=pointer]:
+                  - /url: /life-at-techdome
+              - listitem [ref=e284]:
+                - link "Case Studies" [ref=e285] [cursor=pointer]:
+                  - /url: /case-study
+              - listitem [ref=e286]:
+                - link "Blogs and Articles" [ref=e287] [cursor=pointer]:
+                  - /url: /blog-and-article
+              - listitem [ref=e288]:
+                - link "Newsletters" [ref=e289] [cursor=pointer]:
+                  - /url: /newsletters
+      - generic [ref=e291]:
+        - generic [ref=e292]:
+          - link "Privacy Policy" [ref=e294] [cursor=pointer]:
+            - /url: /privacy-policy
+          - text: "|"
+          - link "Terms of use" [ref=e296] [cursor=pointer]:
+            - /url: /terms-of-use
+        - generic [ref=e297]: Copyright © 2026 Techdome | All rights reserved.
+```

@@ -1,0 +1,230 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: e2e\cta-footer.spec.js >> Navigation >> primary CTA buttons route to confirmed destinations
+- Location: tests\e2e\cta-footer.spec.js:4:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Tearing down "context" exceeded the test timeout of 30000ms.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - banner [ref=e6]:
+      - link "Company logo small Company logo large" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e8]:
+          - img "Company logo small" [ref=e9]
+          - img "Company logo large" [ref=e10]
+      - navigation [ref=e11]:
+        - list [ref=e12]:
+          - listitem [ref=e13]:
+            - link "Expertise" [ref=e14] [cursor=pointer]:
+              - /url: ""
+              - generic [ref=e16]: Expertise
+          - listitem [ref=e17]:
+            - link "Industries" [ref=e18] [cursor=pointer]:
+              - /url: ""
+              - generic [ref=e20]: Industries
+          - listitem [ref=e21]:
+            - link "Insights" [ref=e22] [cursor=pointer]:
+              - /url: ""
+              - generic [ref=e24]: Insights
+          - listitem [ref=e25]:
+            - link "About Us" [ref=e26] [cursor=pointer]:
+              - /url: /about-us
+              - generic [ref=e28]: About Us
+          - listitem [ref=e29]:
+            - link "Careers" [ref=e30] [cursor=pointer]:
+              - /url: /careers
+              - generic [ref=e32]: Careers
+        - link "Contact Us" [ref=e33] [cursor=pointer]:
+          - /url: /contact-us
+          - button "Contact Us" [ref=e34]:
+            - generic [ref=e35]: Contact Us
+    - main [ref=e36]:
+      - main [ref=e37]:
+        - heading "Get in touch" [level=1] [ref=e40]
+      - generic [ref=e44]:
+        - paragraph [ref=e46]:
+          - text: Whether you're looking to grow internationally, expand your product or fulfillment offerings, or looking to replace an outdated system, we have a solution for you.
+          - text: Enter your information and a member of our team will contact you shortly.
+        - generic [ref=e48]:
+          - generic [ref=e49]:
+            - heading "We're here to help." [level=2] [ref=e50]
+            - paragraph [ref=e51]: We'll get back to you within 24 hours.
+          - generic [ref=e52]:
+            - generic [ref=e53]:
+              - generic [ref=e54]:
+                - generic [ref=e55]: Company *
+                - textbox "Company *" [ref=e56]
+              - generic [ref=e58]:
+                - generic [ref=e59]: First Name *
+                - textbox "First Name *" [ref=e60]
+              - generic [ref=e61]:
+                - generic [ref=e62]: Last Name *
+                - textbox "Last Name *" [ref=e63]
+              - generic [ref=e64]:
+                - generic [ref=e65]: Email *
+                - textbox "Email *" [ref=e66]
+              - generic [ref=e67]:
+                - generic [ref=e68]: Phone Number
+                - textbox "Phone Number" [ref=e69]
+              - generic [ref=e70]:
+                - generic [ref=e71]: Message
+                - textbox "Message" [ref=e72]
+                - paragraph [ref=e73]: 0 / 250
+            - button "Send Message" [ref=e74] [cursor=pointer]
+      - generic [ref=e77]:
+        - generic [ref=e81] [cursor=pointer]:
+          - generic [ref=e82]:
+            - heading "Call us" [level=2] [ref=e83]
+            - paragraph [ref=e84]: Mon-Fri from 9am to 8pm (ISD)
+          - generic [ref=e85]: +91 98938 69899
+        - generic [ref=e89] [cursor=pointer]:
+          - generic [ref=e90]:
+            - heading "Visit us" [level=2] [ref=e91]
+            - paragraph [ref=e92]: Visit our office HQ
+          - generic [ref=e93]: View on Google Maps
+        - generic [ref=e97] [cursor=pointer]:
+          - generic [ref=e98]:
+            - heading "Chat to support" [level=2] [ref=e99]
+            - paragraph [ref=e100]: Mon-Fri from 9am to 8pm (ISD)
+          - generic [ref=e101]: contact@techdome.net.in
+      - main
+      - img [ref=e103]
+      - main [ref=e5517]:
+        - generic [ref=e5518]:
+          - heading "Frequently-Asked Questions" [level=1] [ref=e5519]
+          - generic [ref=e5520]:
+            - button "What’s the response time for inquiries? Expand answer" [ref=e5522] [cursor=pointer]:
+              - heading "What’s the response time for inquiries?" [level=2] [ref=e5523]
+              - img "Expand answer" [ref=e5524]
+            - button "Can I schedule a consultation or demo? Expand answer" [ref=e5526] [cursor=pointer]:
+              - heading "Can I schedule a consultation or demo?" [level=2] [ref=e5527]
+              - img "Expand answer" [ref=e5528]
+    - generic [ref=e5529]:
+      - generic [ref=e5531]:
+        - generic [ref=e5533]:
+          - heading "GET UPDATES" [level=2] [ref=e5534]
+          - paragraph [ref=e5535]: Your Needs, Our Solutions
+        - generic [ref=e5537]:
+          - generic [ref=e5538]:
+            - img "MailIcon" [ref=e5539]
+            - generic [ref=e5540]: Enter your email
+            - textbox "Enter your email" [ref=e5541]
+          - button "Submit arrowRight" [ref=e5542] [cursor=pointer]:
+            - generic [ref=e5543]: Submit
+            - img "arrowRight" [ref=e5544]
+      - contentinfo [ref=e5545]:
+        - generic [ref=e5547]:
+          - generic [ref=e5550]:
+            - img "Techdome logo" [ref=e5551]
+            - paragraph [ref=e5552]: Techdome is your trusted partner for end-to-end technology solutions. From planning and building to designing, developing, and launching, we offer comprehensive services to meet your unique needs.
+            - generic [ref=e5554]:
+              - link "linkedin.com icon" [ref=e5555] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/techdome-solutions/
+                - img "linkedin.com icon" [ref=e5556]
+              - link "instagram.com icon" [ref=e5557] [cursor=pointer]:
+                - /url: https://www.instagram.com/techdome.io/
+                - img "instagram.com icon" [ref=e5558]
+              - link "youtube.com icon" [ref=e5559] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UCDzAGKRHUlISf_jJPR7Cp1w
+                - img "youtube.com icon" [ref=e5560]
+              - link "twitter.com icon" [ref=e5561] [cursor=pointer]:
+                - /url: https://x.com/techdomesolves/
+                - img "twitter.com icon" [ref=e5562]
+              - link "facebook.com icon" [ref=e5563] [cursor=pointer]:
+                - /url: https://m.facebook.com/100090201126792/
+                - img "facebook.com icon" [ref=e5564]
+          - generic [ref=e5567]:
+            - navigation [ref=e5569]:
+              - heading "Services" [level=3] [ref=e5570]
+              - list [ref=e5572]:
+                - listitem [ref=e5573]:
+                  - link "Artificial Intelligence" [ref=e5574] [cursor=pointer]:
+                    - /url: /solution/AI-solutions/
+                - listitem [ref=e5575]:
+                  - link "Cloud Computing" [ref=e5576] [cursor=pointer]:
+                    - /url: /solution/cloud-computing-solutions
+                - listitem [ref=e5577]:
+                  - link "Cybersecurity" [ref=e5578] [cursor=pointer]:
+                    - /url: /solution/Cybersecurity-solutions
+                - listitem [ref=e5579]:
+                  - link "Data Analytics" [ref=e5580] [cursor=pointer]:
+                    - /url: /solution/data-analytics-solutions/
+                - listitem [ref=e5581]:
+                  - link "Blockchain" [ref=e5582] [cursor=pointer]:
+                    - /url: /solution/blockchain-solutions
+                - listitem [ref=e5583]:
+                  - link "Business Intelligence" [ref=e5584] [cursor=pointer]:
+                    - /url: /solution/business-intelligence-solutions
+            - navigation [ref=e5586]:
+              - heading "Industries" [level=3] [ref=e5587]
+              - list [ref=e5589]:
+                - listitem [ref=e5590]:
+                  - link "Healthcare" [ref=e5591] [cursor=pointer]:
+                    - /url: /industries/health-industry
+                - listitem [ref=e5592]:
+                  - link "Finance" [ref=e5593] [cursor=pointer]:
+                    - /url: /industries/finance-industry/
+                - listitem [ref=e5594]:
+                  - link "Education" [ref=e5595] [cursor=pointer]:
+                    - /url: /industries/Edtech-industry/
+                - listitem [ref=e5596]:
+                  - link "Information Technology" [ref=e5597] [cursor=pointer]:
+                    - /url: /industries/IT-industry/
+                - listitem [ref=e5598]:
+                  - link "e-commerce" [ref=e5599] [cursor=pointer]:
+                    - /url: /industries/e-commerce-industry
+                - listitem [ref=e5600]:
+                  - link "Manufacturing" [ref=e5601] [cursor=pointer]:
+                    - /url: /industries/manufacturing-industry/
+            - navigation [ref=e5603]:
+              - heading "Company" [level=3] [ref=e5604]
+              - list [ref=e5606]:
+                - listitem [ref=e5607]:
+                  - link "Home" [ref=e5608] [cursor=pointer]:
+                    - /url: /
+                - listitem [ref=e5609]:
+                  - link "About Us" [ref=e5610] [cursor=pointer]:
+                    - /url: /about-us
+                - listitem [ref=e5611]:
+                  - link "Careers" [ref=e5612] [cursor=pointer]:
+                    - /url: /careers
+                - listitem [ref=e5613]:
+                  - link "Life at Techdome" [ref=e5614] [cursor=pointer]:
+                    - /url: /life-at-techdome
+                - listitem [ref=e5615]:
+                  - link "Case Studies" [ref=e5616] [cursor=pointer]:
+                    - /url: /case-study
+                - listitem [ref=e5617]:
+                  - link "Blogs and Articles" [ref=e5618] [cursor=pointer]:
+                    - /url: /blog-and-article
+                - listitem [ref=e5619]:
+                  - link "Newsletters" [ref=e5620] [cursor=pointer]:
+                    - /url: /newsletters
+        - generic [ref=e5622]:
+          - generic [ref=e5623]:
+            - link "Privacy Policy" [ref=e5625] [cursor=pointer]:
+              - /url: /privacy-policy
+            - text: "|"
+            - link "Terms of use" [ref=e5627] [cursor=pointer]:
+              - /url: /terms-of-use
+          - generic [ref=e5628]: Copyright © 2026 Techdome | All rights reserved.
+  - generic [ref=e5629]: Techdome - Consultancy | Contact-us
+```
